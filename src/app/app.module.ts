@@ -28,12 +28,17 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { CartoesListComponent } from './components/cartoes/cartoes-list/cartoes-list.component';
+import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    CartoesListComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +65,7 @@ import { HomeComponent } from './components/home/home.component';
     MatListModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
