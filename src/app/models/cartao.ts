@@ -4,6 +4,6 @@ export interface Cartao {
     cpf: string;
     email: string;
     senha: string;
-    prefis: string[];
+    perfis: string[];
     dataCriacao: any;
 }
