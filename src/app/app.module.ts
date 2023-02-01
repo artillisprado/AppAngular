@@ -31,6 +31,17 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CartoesListComponent } from './components/cartoes/cartoes-list/cartoes-list.component';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
+import { CartoesCreateComponent } from './components/cartoes/cartoes-create/cartoes-create.component';
+import { CartoesUpdateComponent } from './components/cartoes/cartoes-update/cartoes-update.component';
+import { CartoesDeleteComponent } from './components/cartoes/cartoes-delete/cartoes-delete.component';
+import { ClienteListComponent } from './components/clientes/cliente-list/cliente-list.component';
+import { ClienteCreateComponent } from './components/clientes/cliente-create/cliente-create.component';
+import { ClienteUpdateComponent } from './components/clientes/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cliente-delete.component';
+import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
+import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
+import { ChamadoUpdateComponent } from './components/chamado/chamado-update/chamado-update.component';
+import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-read.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +49,18 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    CartoesListComponent
+    CartoesListComponent,
+    CartoesCreateComponent,
+    CartoesUpdateComponent,
+    CartoesDeleteComponent,
+    ClienteListComponent,
+    ClienteCreateComponent,
+    ClienteUpdateComponent,
+    ClienteDeleteComponent,
+    ChamadoListComponent,
+    ChamadoCreateComponent,
+    ChamadoUpdateComponent,
+    ChamadoReadComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +86,9 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
     MatIconModule,
     MatListModule,
     MatCardModule
+    // ToastrModule.forRoot({
+
+    // })
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]

@@ -9,7 +9,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^14.2.0",
+    "@angular/animations": "^14.2.12",
     "@angular/cdk": "^13.0.0",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
@@ -20,7 +20,10 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "angular-jwt": "github:auth0/angular-jwt",
+    "ngx-mask": "^15.0.2",
+    "ngx-toastr": "^16.0.2",
     "rxjs": "~7.5.0",
+    "toastr": "^2.1.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
