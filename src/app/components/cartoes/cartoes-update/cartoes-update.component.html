@@ -23,43 +23,16 @@
         </mat-form-field>
 
         <mat-form-field class="fullwidth" appearance="fill">
-            <mat-label>CPF</mat-label>
+            <mat-label>Cartão</mat-label>
             <input 
-            [(ngModel)]="cartao.cpf"
-            name="cpf"
-            [formControl] = "cpf"
+            [(ngModel)]="cartao.cartao"
+            name="cartao"
+            [formControl] = "ncartao"
             required
             matInput 
             maxlength="14"
             placeholder="Ex: 123.456.789-10">
             <mat-icon matSuffix>pin</mat-icon>
-        </mat-form-field>
-
-        <mat-form-field class="fullwidth" appearance="fill">
-            <mat-label>E-mail</mat-label>
-            <input 
-            [(ngModel)]="cartao.email"
-            name="email"
-            [formControl] = "email"
-            required
-            matInput 
-            maxlength="50"
-            placeholder="Ex: joaquim@mail.com">
-            <mat-icon matSuffix>mail</mat-icon>
-        </mat-form-field>
-
-        <mat-form-field class="fullwidth" appearance="fill">
-            <mat-label>Senha</mat-label>
-            <input 
-            type="password"
-            [(ngModel)]="cartao.senha"
-            name="senha"
-            [formControl] = "senha"
-            required 
-            matInput 
-            maxlength="20"
-            placeholder="Ex: Ed12$#">
-            <mat-icon matSuffix>password</mat-icon>
         </mat-form-field>
 
         <button (click)="update()" [disabled]="!validaCampos()" class="fullwidth mat-elevation-z4" mat-flat-button color="primary">Atualizar</button>

@@ -13,7 +13,7 @@ export class CartoesListComponent implements OnInit {
   
   ELEMENT_DATA: Cartao[] = []
   
-  displayedColumns: string[] = ['id', 'nome', 'cpf', 'email', 'acoes'];
+  displayedColumns: string[] = ['id', 'nome', 'cartao', 'perfis', 'acoes'];
   dataSource = new MatTableDataSource<Cartao>(this.ELEMENT_DATA);
   
   @ViewChild(MatPaginator) paginator: MatPaginator;

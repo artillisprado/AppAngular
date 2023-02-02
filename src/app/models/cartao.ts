@@ -1,9 +1,7 @@
 export interface Cartao {
     id?: any;
     nome: string;
-    cpf: string;
-    email: string;
-    senha: string;
+    cartao: string;
     perfis: string[];
     dataCriacao: any;
 }

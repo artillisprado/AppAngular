@@ -14,16 +14,14 @@ export class CartoesUpdateComponent implements OnInit {
   cartao: Cartao = {
     id: '',
     nome: '',
-    cpf: '',
-    email: '',
-    senha: '',
+    cartao: '',
     perfis: [],
     dataCriacao: ''
   }
 
   nome: FormControl = new FormControl(null, Validators.minLength(3));
-  cpf: FormControl = new FormControl(null, Validators.required);
-  email: FormControl = new FormControl(null, Validators.email);
+  ncartao: FormControl = new FormControl(null, Validators.required);
+  perfis: FormControl = new FormControl(null, Validators.email);
   senha: FormControl = new FormControl(null, Validators.minLength(3));
 
   constructor(
@@ -61,8 +59,6 @@ export class CartoesUpdateComponent implements OnInit {
   }
 
   addPerfil(perfil: any): void {
-    this.cartao.perfis.push(perfil);
-
     if(this.cartao.perfis.includes(perfil)) {
       this.cartao.perfis.splice(this.cartao.perfis.indexOf(perfil), 1);
     } else {
@@ -71,7 +67,7 @@ export class CartoesUpdateComponent implements OnInit {
   }
 
   validaCampos(): boolean {
-    return this.nome.valid && this.cpf.valid && 
-    this.email.valid && this.senha.valid
+    return this.nome.valid && this.ncartao.valid && 
+    this.perfis.valid && this.senha.valid
   }
 }

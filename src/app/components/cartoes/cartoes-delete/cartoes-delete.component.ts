@@ -14,16 +14,14 @@ export class CartoesDeleteComponent implements OnInit {
   cartao: Cartao = {
     id: '',
     nome: '',
-    cpf: '',
-    email: '',
-    senha: '',
+    cartao: '',
     perfis: [],
     dataCriacao: ''
   }
 
   nome: FormControl = new FormControl(null, Validators.minLength(3));
-  cpf: FormControl = new FormControl(null, Validators.required);
-  email: FormControl = new FormControl(null, Validators.email);
+  ncartao: FormControl = new FormControl(null, Validators.required);
+  perfis: FormControl = new FormControl(null, Validators.email);
   senha: FormControl = new FormControl(null, Validators.minLength(3));
 
   constructor(
